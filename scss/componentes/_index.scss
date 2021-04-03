@@ -1,0 +1,244 @@
+.fondo {
+    background-image: url(../imagenes/inicio/audiolibro.jpg);
+    width: $width;
+    height: $height * 10;
+    background-position: center center;
+    background-size: cover;
+
+    @media screen and (max-width: 300px) {
+        background-image: none;
+        height: auto;
+    }
+
+    @media screen and (min-width:300px) and (max-width:800px) {
+        background-image: none;
+        height: auto;
+    }
+
+}
+
+.index {
+    h1 {
+        @extend %titulos;
+        color: $white;
+        font-size: $font-size*3;
+        margin: 7rem 0px 0.5rem 2rem;
+        line-height: map-get($formato-tipografia, line-height);
+        padding: map-get($formato-tipografia, padding);
+
+        @media screen and (max-width:400px) {
+            font-size: $font-size;
+            width: 40%;
+            margin: $margin - 2;
+            color: $black;
+        }
+        
+        @media screen and (min-width:400px) and (max-width:600px) {
+                font-size: $font-size+0.5;
+                width: 50%;
+                margin: $margin;
+                color: $black;
+        }
+
+        @media screen and (min-width:600px) and (max-width:800px) {
+            font-size: $font-size+0.5;
+            width: 50%;
+            margin: $margin;
+            color: $black;
+            text-align: center;
+        }
+    }
+
+    h2 {
+        @extend %titulos;
+        color: $black;
+        background-color: rgb(73, 26, 73);
+        font-size: map-get($formato-tipografia, font-size);
+        line-height: $altura - 0.5;
+        padding: $padding - 0.5;
+        margin: $margin;
+        border-radius: $radius;
+
+        @media screen and (max-width:400px) {
+            font-size: $font-size;
+            width: 90%;
+            margin: $margin - 1;
+            line-height: $altura + 2;
+            padding: $padding;
+        }
+
+        @media screen and (min-width:400px) and (max-width:600px) {
+            font-size: $font-size -1;
+            width: 70%;
+            margin: $margin;
+            line-height: $altura + 1;
+            padding: $padding;
+        }
+
+        @media screen and (min-width:600px) and (max-width:800px) {
+            font-size: $font-size+0.5;
+            width: 60%;
+            margin: $margin;
+            line-height: $altura + 1;
+            padding: $padding;
+        }
+
+        @media screen and (min-width: 800px) and (max-width: 1200px) {
+            line-height: $altura*2;
+        }
+    }
+
+    h3 {
+        @extend %titulos;
+        color: $white;
+        font-size: $font-size - 0.5;
+        line-height: $altura - 0.5;
+        padding: $padding - 1.1;
+        margin: $margin;
+
+        @media screen and (min-width:300px) and (max-width:600px) {
+            font-size: $font-size - 1;
+            width: 80%;
+            margin: $margin;
+            line-height: $altura + 1;
+            padding: $padding;
+            color: $black;
+        }
+
+        @media screen and (min-width:600px) and (max-width:800px) {
+            font-size: $font-size+0.5;
+            width: 60%;
+            margin: $margin;
+            line-height: $altura +1;
+            padding: $padding;
+            color: $black;
+        }
+
+        @media screen and (min-width: 800px) and (max-width: 1300px) {
+            line-height: $altura*2;
+        }
+    }
+}
+
+.index {
+    a {
+        @include botones ($violeta, $border, $radius);
+        color: $black;
+        font-family: $font-montserrat;
+        font-size: $font-size - 0.5;
+        font-weight: map-get($formato-tipografia, font-weight);
+        line-height: $altura + 0.4;
+        text-align: map-get($formato-tipografia, text-align);
+        text-decoration: none;
+        transition: all 1s ease-in;
+
+        &:hover {
+            transform: scale(2);
+        }
+    }
+
+        .card {
+            height: $height*7;
+        
+        }
+}
+
+.parrafoSobreNosotrxs {
+    color: $black;
+    font-family: $font-montserrat;
+    font-size: $font-size - 0.8;
+    font-weight: bolder;
+    line-height: map-get($formato-tipografia, line-height);
+    text-align: map-get($formato-tipografia, text-align);
+    margin-top: 17rem;
+    padding: map-get($formato-tipografia, padding);
+    background-color: $white;
+    border: 0.1rem solid $black;
+    border-radius: $radius;
+
+    @media screen and (min-width:300px) and (max-width:1000px) {
+        margin-top: 5rem;
+    }
+
+    @media screen and (min-width:1000px) and (max-width:1300px) {
+        margin-top: $margin;
+    }
+}
+
+.card-group {
+
+    margin-top: $margin*4;
+    border-radius: $radius;
+    border: 0.4rem solid $lila;
+
+    @media screen and (max-width:574px) {
+        border: none;
+    }
+
+    @media screen and (max-width:1300px) {
+        margin-top: $margin*6;
+    }
+
+
+
+    img {
+        @include imagenes ($width, $height*4.5);
+
+        @media screen and (max-width:350px) {
+            @include imagenes ($width, $height*3);
+        }
+
+        @media screen and (min-width:350px) and (max-width:500px) {
+            @include imagenes ($width, $height*4);
+        }
+
+        @media screen and (min-width:500px) and (max-width:575px) {
+            @include imagenes ($width, $height*5);
+        }
+
+        @media screen and (min-width:575px) and (max-width:800px) {
+            @include imagenes ($width, $height*2);
+        }
+
+        @media screen and (min-width:800px) and (max-width:1000px) {
+            @include imagenes ($width, $height*3);
+        }
+
+        @media screen and (min-width:1000px) and (max-width:1300px) {
+            @include imagenes ($width, $height*3.5);
+        }
+    }
+
+
+    h4 {
+        color: $black;
+        font-family: $font-josefin;
+        font-weight: bolder;
+    }
+
+    p {
+        color: $black;
+        font-family: $font-montserrat;
+        font-weight: $bold;
+        font-style: italic;
+    }
+}
+
+
+.footer-index {
+    margin-top: $height*15;
+    
+    @media screen and (min-width: 300px) and (max-width: 800px) {
+        margin-top: $height;
+    }
+
+    @media screen and (min-width:800px) and (max-width:1000px) {
+        margin-top: $height*20;
+    }
+
+    @media screen and (min-width:1000px) and (max-width:1300px) {
+        margin-top: $height*18;
+    }
+
+}
+

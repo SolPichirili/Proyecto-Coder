@@ -1,0 +1,30 @@
+
+.parrafoSobreHistoria {
+    @extend %parrafos;
+    margin: $margin;
+}
+
+.parrafoSobreAudiolibros {
+    @extend %parrafos;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+.ultimoParrafo {
+    margin: 0rem 1rem 6rem 1rem;
+}
+
+.nosotros {
+    
+    img {
+        width: $width - 30;
+        height: $height*6;
+        margin: $margin*3 auto;
+        border-radius: $radius;
+        border: 0.4rem solid $lila;
+
+        @media screen and (min-width:300px) and (max-width:770px) {
+            @include imagenes ($width,$height*4);
+        }
+    }
+}
+

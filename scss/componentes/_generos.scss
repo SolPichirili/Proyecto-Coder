@@ -1,0 +1,334 @@
+/*Terror*/
+
+.terror-body {
+    background:map-get($terror, background-color);
+    min-height: 100%;
+}
+
+.terror {
+
+    h1 {
+        font-family: map-get($terror, font-family);
+        font-size: map-get($terror, font-size);
+        font-weight: map-get($formato-tipografia, font-weight);
+        letter-spacing: map-get($formato-tipografia, letter-spacing);
+        line-height: map-get($formato-tipografia, line-height);
+        text-align: map-get($formato-tipografia, text-align);
+        word-spacing: map-get($formato-tipografia, word-spacing);
+        padding: map-get($formato-tipografia, padding);
+        border: map-get($formato-tipografia, border);
+        border-radius: map-get($formato-tipografia, border-radius);
+        width: map-get($formato-tipografia, width);
+        height: map-get($formato-tipografia, height);
+        margin: map-get($formato-tipografia, margin);
+        background-color: $rojo-claro;
+        text-decoration: map-get($formato-tipografia, text-decoration);
+
+        @media screen and (min-width:300px) and (max-width:400px) {
+            font-size: $font-size;
+        }
+    }
+
+    img {
+        @include imagenes ($width - 40,$height*7);
+        background-color: $rojo-claro;
+        border: 0.3rem solid $rojo;
+        border-radius: 0.5rem;
+        padding: $padding;
+        transition: all 2s ease-in;
+        margin: $margin*2;
+
+        &:hover {
+            transform: scale(1.5);
+        }
+
+        @media screen and (min-width:300px) and (max-width:400px) {
+            width: $width;
+            margin: 0 0 4rem 0;
+        }
+
+        @media screen and (min-width:401px) and (max-width:600px) {
+            width: 70%;
+            margin: 0 0 4rem 3.5rem;
+        }
+    
+        @media screen and (min-width:601px) and (max-width:800px) {
+            width: 70%;
+            margin: 0 0 4rem 3.5rem;
+        }
+
+        @media screen and (min-width:801px) and (max-width:1000px) {
+            width: 80%;
+            margin: $margin auto;
+        }
+    }
+
+    a {
+        @extend %servicios;
+        margin: $margin;
+
+        @media screen and (min-width:300px) and (max-width:600px) {
+            margin: $margin - 1;
+        }
+    
+        @media screen and (min-width:600px) and (max-width:800px) {
+            margin: margin - 1;
+        }
+    }
+}
+
+.masGeneros {
+    @extend %servicios;
+    margin-top: $margin*2;
+    text-decoration: underline;
+}
+
+/*Novelas Romanticas*/
+
+.novelas-body {
+    background: map-get($novelas, background-color);
+    min-height: 100%;
+}
+
+.novelas {
+
+    h1 {
+        font-family: map-get($novelas, font-family);
+        font-size: map-get($novelas, font-size);
+        font-weight: map-get($formato-tipografia, font-weight);
+        letter-spacing: map-get($formato-tipografia, letter-spacing);
+        line-height: map-get($formato-tipografia, line-height);
+        text-align: map-get($formato-tipografia, text-align);
+        word-spacing: map-get($formato-tipografia, word-spacing);
+        padding: map-get($formato-tipografia, padding);
+        border: map-get($formato-tipografia, border);
+        border-radius: map-get($formato-tipografia, border-radius);
+        width: map-get($formato-tipografia, width);
+        height: map-get($formato-tipografia, height);
+        margin: map-get($formato-tipografia, margin);
+        background-color: $rosa-oscuro;
+        text-decoration: map-get($formato-tipografia, text-decoration);
+
+        @media screen and (min-width:300px) and (max-width:400px) {
+            font-size: $font-size;
+        }
+
+        @media screen and (min-width:300px) and (max-width:600px) {
+            line-height: $altura+2;
+        }
+    
+        @media screen and (min-width:600px) and (max-width:1000px) {
+            line-height: $altura+2;
+        }
+    }
+
+    img {
+        @include imagenes ($width - 40,$height*7);
+        background-color: $rosa-oscuro;
+        border: 0.3rem solid $rosa;
+        border-radius: 0.5rem;
+        padding: $padding;
+        transition: all 2s ease-in;
+        margin: $margin*2;
+
+        &:hover {
+            transform: scale(1.5);
+        }
+
+        @media screen and (min-width:300px) and (max-width:400px) {
+            width: $width;
+            margin: 0 0 4rem 0;
+        }
+
+        @media screen and (min-width:401px) and (max-width:600px) {
+            width: 70%;
+            margin: 0 0 4rem 3.5rem;
+        }
+    
+        @media screen and (min-width:601px) and (max-width:800px) {
+            width: 70%;
+            margin: 0 0 4rem 3.5rem;
+        }
+
+        @media screen and (min-width:801px) and (max-width:1000px) {
+            width: 80%;
+            margin: $margin auto;
+        }
+    }
+
+    a {
+        @extend %servicios;
+        margin: $margin;
+
+        @media screen and (min-width:300px) and (max-width:600px) {
+            margin: $margin - 1;
+        }
+    
+        @media screen and (min-width:600px) and (max-width:800px) {
+            margin: margin - 1;
+        }
+    }
+}
+
+/*Ciencia Ficción*/
+
+.ficcion-body {
+    background: map-get($ficcion, background-color);
+    min-height: 100%;
+}
+
+.cienciaFiccion {
+
+    h1 {
+        font-family: map-get($ficcion, font-family);
+        font-size: map-get($ficcion, font-size);
+        font-weight: map-get($formato-tipografia, font-weight);
+        letter-spacing: map-get($formato-tipografia, letter-spacing);
+        line-height: map-get($formato-tipografia, line-height);
+        text-align: map-get($formato-tipografia, text-align);
+        word-spacing: map-get($formato-tipografia, word-spacing);
+        padding: map-get($formato-tipografia, padding);
+        border: map-get($formato-tipografia, border);
+        border-radius: map-get($formato-tipografia, border-radius);
+        width: map-get($formato-tipografia, width);
+        height: map-get($formato-tipografia, height);
+        margin: map-get($formato-tipografia, margin);
+        background-color: $azul-claro;
+        text-decoration: map-get($formato-tipografia, text-decoration);
+
+        @media screen and (min-width:300px) and (max-width:600px) {
+            line-height: $altura+2;
+            width: 90%;
+        }
+    
+        @media screen and (min-width:600px) and (max-width:1100px) {
+            line-height: $altura+2;
+        }
+    }
+
+    img {
+        @include imagenes ($width - 40, $height*7);
+        background-color: $azul-claro;
+        border: 0.3rem solid $azul;
+        border-radius: 0.5rem;
+        padding: $padding;
+        transition: all 2s ease-in;
+        margin: $margin*2;
+
+        &:hover {
+            transform: scale(1.5);
+        }
+
+        @media screen and (min-width:300px) and (max-width:400px) {
+            width: $width;
+            margin: 0 0 4rem 0;
+        }
+
+        @media screen and (min-width:401px) and (max-width:600px) {
+            width: 70%;
+            margin: 0 0 4rem 3.5rem;
+        }
+    
+        @media screen and (min-width:601px) and (max-width:800px) {
+            width: 70%;
+            margin: 0 0 4rem 3.5rem;
+        }
+
+        @media screen and (min-width:801px) and (max-width:1000px) {
+            width: 80%;
+            margin: $margin auto;
+        }
+    }
+
+    a {
+        @extend %servicios;
+        margin: $margin;
+
+        @media screen and (min-width:300px) and (max-width:600px) {
+            margin: $margin - 1;
+        }
+    
+        @media screen and (min-width:600px) and (max-width:800px) {
+            margin: margin - 1;
+        }
+    }
+}
+
+/*Cocina*/
+
+.cocina-body {
+    background: map-get($cocina, background-color);
+    min-height: 100%;
+}
+
+.cocina {
+
+    h1 {
+        font-family: map-get($cocina, font-family);
+        font-size: map-get($cocina, font-size);
+        font-weight: map-get($formato-tipografia, font-weight);
+        letter-spacing: map-get($formato-tipografia, letter-spacing);
+        line-height: map-get($formato-tipografia, line-height);
+        text-align: map-get($formato-tipografia, text-align);
+        word-spacing: map-get($formato-tipografia, word-spacing);
+        padding: map-get($formato-tipografia, padding);
+        border: map-get($formato-tipografia, border);
+        border-radius: map-get($formato-tipografia, border-radius);
+        width: map-get($formato-tipografia, width);
+        height: map-get($formato-tipografia, height);
+        margin: map-get($formato-tipografia, margin);
+        background-color: $amarillo;
+        text-decoration: map-get($formato-tipografia, text-decoration);
+
+        @media screen and (min-width:300px) and (max-width:600px) {
+            width: 90%;
+        }
+    }
+
+    img {
+        @include imagenes ($width - 40, $height*6);
+        background-color: $amarillo;
+        border: 0.3rem solid $amarillo-claro;
+        border-radius: 0.5rem;
+        padding: $padding;
+        transition: all 2s ease-in;
+        margin: $margin*2;
+
+        &:hover {
+            transform: scale(1.5);
+        }
+
+        @media screen and (min-width:300px) and (max-width:400px) {
+            width: $width;
+            margin: 0 0 4rem 0;
+        }
+
+        @media screen and (min-width:401px) and (max-width:600px) {
+            width: 70%;
+            margin: 0 0 4rem 3.5rem;
+        }
+    
+        @media screen and (min-width:601px) and (max-width:800px) {
+            width: 70%;
+            margin: 0 0 4rem 3.5rem;
+        }
+
+        @media screen and (min-width:801px) and (max-width:1000px) {
+            width: 80%;
+            margin: $margin auto;
+        }
+    }
+
+    a {
+        @extend %servicios;
+        margin: $margin;
+
+        @media screen and (min-width:300px) and (max-width:600px) {
+            margin: $margin - 1;
+        }
+    
+        @media screen and (min-width:600px) and (max-width:800px) {
+            margin: margin - 1;
+        }
+    }
+}

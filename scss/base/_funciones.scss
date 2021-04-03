@@ -1,0 +1,69 @@
+/*Extend*/
+
+%titulos {
+    font-family: map-get($formato-tipografia, font-family);
+    font-weight: map-get($formato-tipografia, font-weight);
+    letter-spacing: map-get($formato-tipografia, letter-spacing);
+    text-align: map-get($formato-tipografia, text-align);
+    word-spacing: map-get($formato-tipografia, word-spacing);
+}
+
+%parrafos {
+    color: $black;
+    font-family: $font-montserrat;
+    font-size: $font-size - 1;
+    font-weight: $bold;
+    letter-spacing: map-get($formato-tipografia, letter-spacing);
+    line-height: map-get($formato-tipografia, line-height);
+    word-spacing: map-get($formato-tipografia, word-spacing);
+}
+
+%formularios {
+    text-align: left;
+    font-family: $font-josefin;
+    font-size: $font-size - 0.8;
+    padding: $padding - 1.5;
+    border: 0.2rem solid $violeta-oscuro;
+    border-radius: 0.1rem;
+}
+
+%servicios {
+    font-family: map-get($formato-tipografia, font-family);
+    font-size: $font-size - 0.5;
+    font-weight: $bold;
+    line-height: map-get($formato-tipografia, line-height);
+    text-align: map-get($formato-tipografia, text-align);
+}
+
+%parrafos-compra {
+    font-family: map-get($formato-tipografia, font-family);
+    font-size: $font-size - 1;
+    font-weight: $bold;
+    line-height: map-get($formato-tipografia, line-height);
+}
+
+%botones {
+    font-family: $font-josefin;
+    width: 30%;
+    margin: 2rem;
+    font-weight: $bold;
+}
+
+/*Mixin*/
+
+@mixin imagenes ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+@mixin botones ($color, $borde, $bordeado) {
+    background-color: $color;
+    border: $borde;
+    border-radius: $bordeado;
+}
+
+@mixin borde-imagenes ($bg-color, $contorno, $borde) {
+    background-color: $bg-color;
+    padding: $contorno;
+    $borde: $border;
+}

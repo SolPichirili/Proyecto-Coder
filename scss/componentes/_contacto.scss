@@ -1,0 +1,143 @@
+
+.contacto {
+    
+    p {
+        @extend %parrafos;
+
+        @media screen and (min-width:300px) and (max-width:700px) {
+            margin: 2rem auto;
+        }
+    }
+
+    form {
+        background-color: $lila;
+        border: 0.1rem solid $violeta-oscuro;
+        border-radius: $radius;
+        padding: $padding*4;
+        margin: $margin*3 auto;
+        width: $width;
+        height: $height*20;
+
+        @media screen and (min-width:300px) and (max-width:800px) {
+            padding: $padding;
+        }
+
+        @media screen and (min-width:990px) and (max-width:1100px) {
+            padding: $padding*2;
+        }
+    }
+
+    label {
+        @extend %parrafos;
+
+        @media screen and (min-width:300px) and (max-width:600px) {
+            width: 80%;
+        }
+    
+        @media screen and (min-width:600px) and (max-width:800px) {
+            width: 80%;
+        }
+    }
+}
+
+.contacto {
+    input[text], input[email], input[radio], input[checkbox] {
+        @extend %parrafos;
+
+        @media screen and (min-width:300px) and (max-width:600px) {
+            width: 100%;
+        }
+    
+        @media screen and (min-width:600px) and (max-width:800px) {
+            width: 100%;
+        }
+    }
+
+    legend {
+        @extend %parrafos;
+    }
+
+    button {
+        @extend %parrafos;
+        background-color: $violeta;
+        border: 0.2rem solid $black;
+        border-radius: 0.4rem;
+        transition: all 1s;
+        margin: $margin*3;
+        text-align: center;
+
+        &:hover {
+            transform: scale(2);
+        }
+
+        @media screen and (min-width:300px) and (max-width:600px) {
+            width: 40%;
+            margin: $margin;
+        }
+    
+        @media screen and (min-width:600px) and (max-width:1000px) {
+            width: 40%;
+            margin: $margin;
+        }
+    }
+}
+
+.contacto {
+
+    img {
+        border-radius: $radius;
+        width: $width - 30;
+        height: $height*6;
+        margin: $margin*3 auto;
+        border: 0.4rem solid $violeta;
+
+        @media screen and (min-width:300px) and (max-width:400px) {
+            width: $width;
+            margin: $margin*2 auto;
+            height: $height*3;
+        }
+
+        @media screen and (min-width:401px) and (max-width:600px) {
+            width: $width;
+            margin: $margin*2 auto;
+            height: $height*4;
+        }
+
+        @media screen and (min-width:601px) and (max-width:765px) {
+            width: $width;
+            margin: $margin*2 auto;
+            height: $height*5;
+        }
+
+        @media screen and (min-width:766px) and (max-width:800px) {
+            width: $width;
+            margin: $margin*2 auto;
+            height: $height*7;
+        }
+
+        @media screen and (min-width:801px) and (max-width:990px) {
+            width: $width;
+            margin: $margin*2 auto;
+            height: $height*5;
+        }
+
+        @media screen and (min-width:991px) and (max-width:1000px) {
+            width: $width;
+            margin: $margin*2 auto;
+            height: $height*7;
+        }
+
+        @media screen and (min-width:991px) and (max-width:1100px) {
+            width: $width;
+            margin: $margin auto;
+            height: $height*7;
+        }
+    }
+}
+.mail {
+    margin: $margin;
+}
+
+.modal {
+    @extend %parrafos;
+}

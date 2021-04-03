@@ -1,0 +1,124 @@
+@import "base/variables";
+@import "base/maps";
+@import "componentes/catalogo";
+@import "componentes/compra";
+@import "componentes/contacto";
+@import "componentes/generos";
+@import "componentes/index";
+@import "componentes/libros";
+@import "componentes/servicios";
+@import "componentes/sobrenosotrxs";
+@import "base/funciones";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Elementos principales*/
+
+body {
+    background: $bg-body;
+    min-height: 100%;
+}
+
+.navbar {
+    background-color: $violeta;
+    font-family: $font-josefin;
+    font-size: $font-size - 0.8;
+}
+
+.navbar-brand {
+    margin-left: $margin*5;
+
+    img {
+        @include imagenes ($width/2, $height*2+6);
+        margin: $margin;
+
+        @media screen and (max-width: 300px) {
+            display: none;
+        }
+
+        @media screen and (min-width:300px) and (max-width:990px) {
+            display: none;
+        }
+
+        @media screen and (min-width:990px) and (max-width:1300px) {
+            @include imagenes ($width, $height*3)
+        }
+
+        @media screen and (min-width:1051px) and (max-width:1300px) {
+            @include imagenes (70%, $height*3);
+        }
+    }
+}
+
+.breadcrumb-item {
+    font-family: $font-josefin;
+    font-size: 1.2rem;
+    margin: 1rem;
+
+    a {
+        color: $black;
+    }
+}
+
+footer {
+    background-color: $violeta;
+    padding: $padding;
+
+    ul {
+        color: map-get($formato-tipografia, color);
+        font-family: map-get($formato-tipografia, font-family);
+        font-size: medium;
+        font-weight: bolder;
+        letter-spacing: map-get($formato-tipografia, letter-spacing);
+        line-height: $altura;
+        text-align: map-get($formato-tipografia, text-align);
+        text-decoration: none;
+        word-spacing: map-get($formato-tipografia, word-spacing);
+        list-style: none;
+    }
+}
+
+.datosDeLaEmpresa {
+    color: $white;
+    font-family: map-get($formato-tipografia, font-family );
+    font-size: smaller;
+    font-weight: $bold;
+    font-style: italic;
+    line-height: map-get($formato-tipografia, line-height);
+    text-align: left;
+    word-spacing: $space;
+    padding: $padding - 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.nosotros h1, .nosotros h2, .catalogo h1, .gratis,
+.servicios h1, .compra h1, .contacto h1 {
+    @extend %titulos;
+    color: map-get($formato-tipografia, color);
+    font-size: map-get($formato-tipografia, font-size);
+    text-decoration: map-get($formato-tipografia, text-decoration);
+    background-color: map-get($formato-tipografia, background-color);
+    border: map-get($formato-tipografia, border);
+    border-radius: map-get($formato-tipografia, border-radius);
+    width: map-get($formato-tipografia, width);
+    height: map-get($formato-tipografia, height);
+    margin: map-get($formato-tipografia, margin);
+    line-height: map-get($formato-tipografia, line-height);
+    padding: map-get($formato-tipografia, padding);
+
+    @media screen and (min-width:300px) and (max-width:600px) {
+        padding: $padding*2;
+        width: $width;
+    }
+
+    @media screen and (min-width:600px) and (max-width:800px) {
+        padding: $padding*2;
+        width: 70%;
+    }
+}

@@ -1,0 +1,80 @@
+
+.parrafoServicios {
+    @extend %servicios;
+    color: $white;
+    background-color: $violeta;
+    width: $width - 40;
+    text-align: center;
+    padding: $padding;
+    border-radius: $radius;
+    margin: 10rem auto;
+
+    @media screen and (min-width:300px) and (max-width:800px) {
+        width: 90%;
+    }
+}
+
+.enNegro {
+    @extend %servicios;
+    color: $black;
+}
+
+.enBlanco {
+    @extend %servicios;
+    color: $white;
+}
+
+.carousel {
+    margin: $margin + 3;
+    height: $height *9 + 5;
+    border: 0.5rem solid $lila;
+    border-radius: $radius;
+
+    @media screen and (min-width:300px) and (max-width:500px) {
+        height: $height*4;
+        border: none;
+        width: 90%;
+        margin: $margin - 1;
+    }
+
+    @media screen and (min-width:501px) and (max-width:700px) {
+        height: $height*5;
+        border: none;
+        width: 90%;
+        margin: $margin - 1;
+    }
+
+    @media screen and (min-width:701px) and (max-width:1000px) {
+        height: $height*6;
+        border: none;
+        width: 90%;
+        margin: $margin - 1;
+    }
+}
+
+
+.servicios {
+    
+    img {
+        height: $height *9 +2.5;
+
+        @media screen and (min-width:300px) and (max-width:500px) {
+            height: $height*4;
+            border-radius: $radius;
+            width: $width;
+        }
+
+        @media screen and (min-width:501px) and (max-width:700px) {
+            height: $height*5;
+            border-radius: $radius;
+            width: $width;
+        }
+
+        @media screen and (min-width:701px) and (max-width:1000px) {
+            height: $height*6;
+            border-radius: $radius;
+            width: $width;
+        }
+    }
+}
+

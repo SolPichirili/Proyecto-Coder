@@ -1,0 +1,49 @@
+
+$formato-tipografia: (
+    color: $lila,
+    font-family: $font-josefin,
+    font-size: $font-size,
+    font-weight: 700,
+    letter-spacing: $space,
+    line-height: $altura + 1,
+    text-decoration: underline,
+    text-align: center,
+    word-spacing: $space + 0.1,
+    padding: $padding,
+    background-color: $violeta,
+    border: 0.1rem solid $violeta-oscuro,
+    border-radius: 0.2rem,
+    width: $width - 50,
+    height: $height - 70,
+    margin: 8rem auto,
+);
+
+$terror: (
+    background-color: $rojo,
+    font-family: $font-elite,
+    font-size: $font-size + 1,
+);
+
+$novelas: (
+    background-color: $rosa,
+    font-family: $font-vibes,
+    font-size: $font-size + 1.5,
+);
+
+$ficcion: (
+    background-color: $azul,
+    font-family: $font-orbitron,
+    font-size: $font-size + 1,
+);
+
+$cocina: (
+    background-color: $amarillo-claro,
+    font-family: $font-courgette,
+    font-size: $font-size + 1,
+);
+
+$gratis: (
+    background-color: $gris-claro,
+    font-family: $font-cinzel,
+    font-size: $font-size + 1,
+);
