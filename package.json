@@ -12,5 +12,13 @@
     "nodemon": "^2.0.7"
   },
   "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SolPichirili/Proyecto-Coder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SolPichirili/Proyecto-Coder/issues"
+  },
+  "homepage": "https://github.com/SolPichirili/Proyecto-Coder#readme",
   "description": ""
 }
