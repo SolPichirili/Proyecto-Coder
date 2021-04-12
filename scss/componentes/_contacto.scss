@@ -18,8 +18,19 @@
         width: $width;
         height: $height*20;
 
-        @media screen and (min-width:300px) and (max-width:800px) {
+        @media screen and (min-width:300px) and (max-width:400px) {
             padding: $padding;
+            height: $height*17;
+        }
+
+        @media screen and (min-width:401px) and (max-width:600px) {
+            padding: $padding;
+            height: $height*15;
+        }
+
+        @media screen and (min-width:601px) and (max-width:800px) {
+            padding: $padding;
+            height: $height*17;
         }
 
         @media screen and (min-width:990px) and (max-width:1100px) {
@@ -91,34 +102,34 @@
         margin: $margin*3 auto;
         border: 0.4rem solid $violeta;
 
-        @media screen and (min-width:300px) and (max-width:400px) {
+        @media screen and (min-width:300px) and (max-width:500px) {
             width: $width;
-            margin: $margin*2 auto;
+            margin: $margin auto;
             height: $height*3;
         }
 
-        @media screen and (min-width:401px) and (max-width:600px) {
+        @media screen and (min-width:501px) and (max-width:600px) {
             width: $width;
-            margin: $margin*2 auto;
-            height: $height*4;
+            margin: $margin auto;
+            height: $height*3.7;
         }
 
         @media screen and (min-width:601px) and (max-width:765px) {
             width: $width;
             margin: $margin*2 auto;
-            height: $height*5;
+            height: $height*4;
         }
 
         @media screen and (min-width:766px) and (max-width:800px) {
             width: $width;
             margin: $margin*2 auto;
-            height: $height*7;
+            height: $height*6;
         }
 
         @media screen and (min-width:801px) and (max-width:990px) {
             width: $width;
             margin: $margin*2 auto;
-            height: $height*5;
+            height: $height*4;
         }
 
         @media screen and (min-width:991px) and (max-width:1000px) {
@@ -131,6 +142,12 @@
             width: $width;
             margin: $margin auto;
             height: $height*7;
+        }
+
+        @media screen and (min-width:1101px) and (max-width:1300px) {
+            width: $width;
+            margin: $margin auto;
+            height: $height*6;
         }
     }
 }

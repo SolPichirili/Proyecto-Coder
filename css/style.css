@@ -155,19 +155,14 @@
 .contenidoGratuito img:hover {
   transform: rotateZ(360deg);
 }
-@media screen and (min-width: 300px) and (max-width: 400px) {
+@media screen and (min-width: 300px) and (max-width: 500px) {
   .contenidoGratuito img {
     width: 100%;
   }
 }
-@media screen and (min-width: 401px) and (max-width: 500px) {
-  .contenidoGratuito img {
-    width: 70%;
-  }
-}
 @media screen and (min-width: 765px) and (max-width: 1000px) {
   .contenidoGratuito img {
-    width: 50%;
+    width: 60%;
   }
 }
 
@@ -227,9 +222,22 @@
   width: 100%;
   height: 200vh;
 }
-@media screen and (min-width: 300px) and (max-width: 800px) {
+@media screen and (min-width: 300px) and (max-width: 400px) {
   .contacto form {
     padding: 2rem;
+    height: 170vh;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  .contacto form {
+    padding: 2rem;
+    height: 150vh;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  .contacto form {
+    padding: 2rem;
+    height: 170vh;
   }
 }
 @media screen and (min-width: 990px) and (max-width: 1100px) {
@@ -289,39 +297,39 @@
   margin: 6rem auto;
   border: 0.4rem solid #4B244A;
 }
-@media screen and (min-width: 300px) and (max-width: 400px) {
+@media screen and (min-width: 300px) and (max-width: 500px) {
   .contacto img {
     width: 100%;
-    margin: 4rem auto;
+    margin: 2rem auto;
     height: 30vh;
   }
 }
-@media screen and (min-width: 401px) and (max-width: 600px) {
+@media screen and (min-width: 501px) and (max-width: 600px) {
   .contacto img {
     width: 100%;
-    margin: 4rem auto;
-    height: 40vh;
+    margin: 2rem auto;
+    height: 37vh;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 765px) {
   .contacto img {
     width: 100%;
     margin: 4rem auto;
-    height: 50vh;
+    height: 40vh;
   }
 }
 @media screen and (min-width: 766px) and (max-width: 800px) {
   .contacto img {
     width: 100%;
     margin: 4rem auto;
-    height: 70vh;
+    height: 60vh;
   }
 }
 @media screen and (min-width: 801px) and (max-width: 990px) {
   .contacto img {
     width: 100%;
     margin: 4rem auto;
-    height: 50vh;
+    height: 40vh;
   }
 }
 @media screen and (min-width: 991px) and (max-width: 1000px) {
@@ -336,6 +344,13 @@
     width: 100%;
     margin: 2rem auto;
     height: 70vh;
+  }
+}
+@media screen and (min-width: 1101px) and (max-width: 1300px) {
+  .contacto img {
+    width: 100%;
+    margin: 2rem auto;
+    height: 60vh;
   }
 }
 
@@ -392,8 +407,8 @@
 }
 @media screen and (min-width: 401px) and (max-width: 600px) {
   .terror img {
-    width: 70%;
-    margin: 0 0 4rem 3.5rem;
+    width: 90%;
+    margin: 0 0 4rem 1rem;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 800px) {
@@ -404,12 +419,20 @@
 }
 @media screen and (min-width: 801px) and (max-width: 1000px) {
   .terror img {
-    width: 80%;
+    width: 100%;
+    margin: 2rem auto;
+  }
+}
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+  .terror img {
+    width: 90%;
     margin: 2rem auto;
   }
 }
 .terror a {
   margin: 2rem;
+  color: black;
+  text-decoration: underline;
 }
 @media screen and (min-width: 300px) and (max-width: 600px) {
   .terror a {
@@ -424,7 +447,6 @@
 
 .masGeneros {
   margin-top: 4rem;
-  text-decoration: underline;
 }
 
 /*Novelas Romanticas*/
@@ -450,7 +472,7 @@
   background-color: #f398a7;
   text-decoration: underline;
 }
-@media screen and (min-width: 300px) and (max-width: 400px) {
+@media screen and (min-width: 300px) and (max-width: 500px) {
   .novelas h1 {
     font-size: 2rem;
   }
@@ -486,8 +508,8 @@
 }
 @media screen and (min-width: 401px) and (max-width: 600px) {
   .novelas img {
-    width: 70%;
-    margin: 0 0 4rem 3.5rem;
+    width: 90%;
+    margin: 0 0 4rem 1rem;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 800px) {
@@ -498,12 +520,20 @@
 }
 @media screen and (min-width: 801px) and (max-width: 1000px) {
   .novelas img {
-    width: 80%;
+    width: 100%;
+    margin: 2rem auto;
+  }
+}
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+  .novelas img {
+    width: 90%;
     margin: 2rem auto;
   }
 }
 .novelas a {
   margin: 2rem;
+  color: black;
+  text-decoration: underline;
 }
 @media screen and (min-width: 300px) and (max-width: 600px) {
   .novelas a {
@@ -571,8 +601,8 @@
 }
 @media screen and (min-width: 401px) and (max-width: 600px) {
   .cienciaFiccion img {
-    width: 70%;
-    margin: 0 0 4rem 3.5rem;
+    width: 90%;
+    margin: 0 0 4rem 1rem;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 800px) {
@@ -583,12 +613,20 @@
 }
 @media screen and (min-width: 801px) and (max-width: 1000px) {
   .cienciaFiccion img {
-    width: 80%;
+    width: 100%;
+    margin: 2rem auto;
+  }
+}
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+  .cienciaFiccion img {
+    width: 90%;
     margin: 2rem auto;
   }
 }
 .cienciaFiccion a {
   margin: 2rem;
+  color: black;
+  text-decoration: underline;
 }
 @media screen and (min-width: 300px) and (max-width: 600px) {
   .cienciaFiccion a {
@@ -650,8 +688,8 @@
 }
 @media screen and (min-width: 401px) and (max-width: 600px) {
   .cocina img {
-    width: 70%;
-    margin: 0 0 4rem 3.5rem;
+    width: 90%;
+    margin: 0 0 4rem 1rem;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 800px) {
@@ -662,12 +700,20 @@
 }
 @media screen and (min-width: 801px) and (max-width: 1000px) {
   .cocina img {
-    width: 80%;
+    width: 100%;
+    margin: 2rem auto;
+  }
+}
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+  .cocina img {
+    width: 90%;
     margin: 2rem auto;
   }
 }
 .cocina a {
   margin: 2rem;
+  color: black;
+  text-decoration: underline;
 }
 @media screen and (min-width: 300px) and (max-width: 600px) {
   .cocina a {
@@ -882,14 +928,9 @@
 .cocina-libros iframe {
   width: 100%;
   height: 50vh;
-  margin: 4rem;
+  margin-bottom: 4rem;
 }
-@media screen and (min-width: 300px) and (max-width: 600px) {
-  .cocina-libros iframe {
-    margin: 0 0 4rem 0;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 800px) {
+@media screen and (min-width: 300px) and (max-width: 800px) {
   .cocina-libros iframe {
     margin: 0 0 4rem 0;
   }
@@ -905,13 +946,7 @@
   margin: 2rem;
   text-decoration: underline;
 }
-@media screen and (min-width: 300px) and (max-width: 600px) {
-  .cocina-libros h1 {
-    line-height: 3rem;
-    margin: 0 0 2rem 0;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 800px) {
+@media screen and (min-width: 300px) and (max-width: 900px) {
   .cocina-libros h1 {
     line-height: 3rem;
     margin: 0 0 2rem 0;
@@ -928,12 +963,7 @@
   text-decoration: underline;
   margin: 2rem;
 }
-@media screen and (min-width: 300px) and (max-width: 600px) {
-  .cocina-libros h2 {
-    margin: 0 0 2rem 0;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 800px) {
+@media screen and (min-width: 300px) and (max-width: 800px) {
   .cocina-libros h2 {
     margin: 0 0 2rem 0;
   }
@@ -951,7 +981,7 @@
   .cocina-libros img {
     width: 100%;
     height: 70vh;
-    margin: 0 0 2rem 0;
+    margin: 0 0 2rem 0.7rem;
   }
 }
 @media screen and (min-width: 450px) and (max-width: 600px) {
@@ -995,14 +1025,7 @@
 .parrafosLibros {
   margin-top: 8rem;
 }
-@media screen and (min-width: 300px) and (max-width: 600px) {
-  .parrafosLibros {
-    width: 100%;
-    height: 60vh;
-    margin: 0 0 2rem 0;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 900px) {
+@media screen and (min-width: 300px) and (max-width: 900px) {
   .parrafosLibros {
     width: 100%;
     height: 60vh;
@@ -1014,14 +1037,9 @@
 .ficcion-libros iframe {
   width: 100%;
   height: 50vh;
-  margin: 4rem;
+  margin-bottom: 4rem;
 }
-@media screen and (min-width: 300px) and (max-width: 600px) {
-  .ficcion-libros iframe {
-    margin: 0 0 2rem 0;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 800px) {
+@media screen and (min-width: 300px) and (max-width: 800px) {
   .ficcion-libros iframe {
     margin: 0 0 2rem 0;
   }
@@ -1037,13 +1055,7 @@
   margin: 2rem;
   text-decoration: underline;
 }
-@media screen and (min-width: 300px) and (max-width: 600px) {
-  .ficcion-libros h1 {
-    line-height: 3rem;
-    margin: 0 0 2rem 0;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 800px) {
+@media screen and (min-width: 300px) and (max-width: 900px) {
   .ficcion-libros h1 {
     line-height: 3rem;
     margin: 0 0 2rem 0;
@@ -1058,15 +1070,9 @@
   text-align: center;
   word-spacing: 0.2rem;
   text-decoration: underline;
-  margin: 2rem;
+  margin: 1rem;
 }
-@media screen and (min-width: 300px) and (max-width: 600px) {
-  .ficcion-libros h2 {
-    line-height: 3rem;
-    margin: 0 0 2rem 0;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 800px) {
+@media screen and (min-width: 300px) and (max-width: 900px) {
   .ficcion-libros h2 {
     line-height: 3rem;
     margin: 0 0 2rem 0;
@@ -1130,14 +1136,9 @@
 .novelas-libros iframe {
   width: 100%;
   height: 50vh;
-  margin: 4rem;
+  margin-bottom: 4rem;
 }
-@media screen and (min-width: 300px) and (max-width: 600px) {
-  .novelas-libros iframe {
-    margin: 0 0 2rem 0;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 800px) {
+@media screen and (min-width: 300px) and (max-width: 800px) {
   .novelas-libros iframe {
     margin: 0 0 2rem 0;
   }
@@ -1153,13 +1154,7 @@
   margin: 2rem;
   text-decoration: underline;
 }
-@media screen and (min-width: 300px) and (max-width: 600px) {
-  .novelas-libros h1 {
-    line-height: 4rem;
-    margin: 0 0 2rem 0;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 800px) {
+@media screen and (min-width: 300px) and (max-width: 900px) {
   .novelas-libros h1 {
     line-height: 4rem;
     margin: 0 0 2rem 0;
@@ -1176,13 +1171,7 @@
   text-decoration: underline;
   margin: 2rem;
 }
-@media screen and (min-width: 300px) and (max-width: 600px) {
-  .novelas-libros h2 {
-    line-height: 3rem;
-    margin: 0 0 2rem 0;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 800px) {
+@media screen and (min-width: 300px) and (max-width: 800px) {
   .novelas-libros h2 {
     line-height: 3rem;
     margin: 0 0 2rem 0;
@@ -1203,15 +1192,9 @@
 .gif {
   width: 100%;
   height: 60vh;
-  margin: 4rem;
+  margin-bottom: 4rem;
 }
-@media screen and (min-width: 300px) and (max-width: 600px) {
-  .gif {
-    height: 30vh;
-    margin: 0 0 2rem 0;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 800px) {
+@media screen and (min-width: 300px) and (max-width: 800px) {
   .gif {
     height: 30vh;
     margin: 0 0 2rem 0;
@@ -1265,14 +1248,9 @@
 .terror-libros iframe {
   width: 100%;
   height: 50vh;
-  margin: 4rem;
+  margin-bottom: 4rem;
 }
-@media screen and (min-width: 300px) and (max-width: 600px) {
-  .terror-libros iframe {
-    margin: 0 0 2rem 0;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 800px) {
+@media screen and (min-width: 300px) and (max-width: 800px) {
   .terror-libros iframe {
     margin: 0 0 2rem 0;
   }
@@ -1293,13 +1271,7 @@
     font-size: 2rem;
   }
 }
-@media screen and (min-width: 300px) and (max-width: 600px) {
-  .terror-libros h1 {
-    line-height: 3rem;
-    margin: 0 0 2rem 0;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 800px) {
+@media screen and (min-width: 300px) and (max-width: 800px) {
   .terror-libros h1 {
     line-height: 3rem;
     margin: 0 0 2rem 0;
@@ -1316,13 +1288,7 @@
   text-decoration: underline;
   margin: 2rem;
 }
-@media screen and (min-width: 300px) and (max-width: 600px) {
-  .terror-libros h2 {
-    line-height: 3rem;
-    margin: 0 0 2rem 0;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 800px) {
+@media screen and (min-width: 300px) and (max-width: 800px) {
   .terror-libros h2 {
     line-height: 3rem;
     margin: 0 0 2rem 0;
@@ -1393,12 +1359,7 @@
   height: 50vh;
   margin: 4rem;
 }
-@media screen and (min-width: 300px) and (max-width: 600px) {
-  .gratis-libros iframe {
-    margin: 0 0 2rem 0;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 800px) {
+@media screen and (min-width: 300px) and (max-width: 800px) {
   .gratis-libros iframe {
     margin: 0 0 2rem 0;
   }
@@ -1414,13 +1375,7 @@
   margin: 2rem;
   text-decoration: underline;
 }
-@media screen and (min-width: 300px) and (max-width: 600px) {
-  .gratis-libros h1 {
-    line-height: 3rem;
-    margin: 0 0 2rem 0;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 800px) {
+@media screen and (min-width: 300px) and (max-width: 900px) {
   .gratis-libros h1 {
     line-height: 3rem;
     margin: 0 0 2rem 0;
@@ -1437,13 +1392,7 @@
   text-decoration: underline;
   margin: 2rem;
 }
-@media screen and (min-width: 300px) and (max-width: 600px) {
-  .gratis-libros h2 {
-    line-height: 3rem;
-    margin: 0 0 2rem 0;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 800px) {
+@media screen and (min-width: 300px) and (max-width: 800px) {
   .gratis-libros h2 {
     line-height: 3rem;
     margin: 0 0 2rem 0;
@@ -1532,9 +1481,17 @@
   border: 0.5rem solid #9A53E6;
   border-radius: 0.5rem;
 }
-@media screen and (min-width: 300px) and (max-width: 500px) {
+@media screen and (min-width: 300px) and (max-width: 400px) {
   .carousel {
     height: 40vh;
+    border: none;
+    width: 90%;
+    margin: 1rem;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 500px) {
+  .carousel {
+    height: 35vh;
     border: none;
     width: 90%;
     margin: 1rem;
@@ -1560,9 +1517,16 @@
 .servicios img {
   height: 92.5vh;
 }
-@media screen and (min-width: 300px) and (max-width: 500px) {
+@media screen and (min-width: 300px) and (max-width: 400px) {
   .servicios img {
     height: 40vh;
+    border-radius: 0.5rem;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 500px) {
+  .servicios img {
+    height: 35vh;
     border-radius: 0.5rem;
     width: 100%;
   }

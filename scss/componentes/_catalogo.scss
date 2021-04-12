@@ -104,17 +104,13 @@
             transform: rotateZ(360deg);
         }
 
-        @media screen and (min-width:300px) and (max-width:400px) {
+        @media screen and (min-width:300px) and (max-width:500px) {
             width: 100%;
             
         }
 
-        @media screen and (min-width:401px) and (max-width:500px) {
-            width: 70%;
-        }
-
         @media screen and (min-width:765px) and (max-width:1000px) {
-            width: 50%;
+            width: 60%;
         }
     }
 }
