@@ -21,6 +21,7 @@
 body {
     background: $bg-body;
     min-height: 100%;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -50,7 +51,7 @@ body {
 
         @media screen and (min-width:1051px) and (max-width:1300px) {
             @include imagenes (70%, $height*3);
-        }
+        }        
     }
 }
 

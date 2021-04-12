@@ -1,7 +1,7 @@
 .fondo {
     background-image: url(../imagenes/inicio/audiolibro.jpg);
     width: $width;
-    height: $height * 10;
+    height: $height*10;
     background-position: center center;
     background-size: cover;
 
@@ -10,8 +10,8 @@
         height: auto;
     }
 
-    @media screen and (min-width:300px) and (max-width:800px) {
-        background-image: none;
+    @media screen and (min-width:300px) and (max-width:700px) {
+        background-image: url(../imagenes/inicio/fondomobile.jpg);
         height: auto;
     }
 
@@ -37,14 +37,14 @@
                 font-size: $font-size+0.5;
                 width: 50%;
                 margin: $margin;
-                color: $black;
+                color: $lila;
         }
 
         @media screen and (min-width:600px) and (max-width:800px) {
             font-size: $font-size+0.5;
             width: 50%;
             margin: $margin;
-            color: $black;
+            color: $lila;
             text-align: center;
         }
     }
@@ -150,7 +150,7 @@
     font-weight: bolder;
     line-height: map-get($formato-tipografia, line-height);
     text-align: map-get($formato-tipografia, text-align);
-    margin-top: 17rem;
+    margin-top: 8rem;
     padding: map-get($formato-tipografia, padding);
     background-color: $white;
     border: 0.1rem solid $black;
@@ -167,7 +167,7 @@
 
 .card-group {
 
-    margin-top: $margin*4;
+    margin: $margin*4 $margin $margin*2 $margin;
     border-radius: $radius;
     border: 0.4rem solid $lila;
 
@@ -178,8 +178,6 @@
     @media screen and (max-width:1300px) {
         margin-top: $margin*6;
     }
-
-
 
 
     h4 {
@@ -194,23 +192,5 @@
         font-weight: $bold;
         font-style: italic;
     }
-}
-
-
-.footer-index {
-    margin-top: $height*15;
-    
-    @media screen and (min-width: 300px) and (max-width: 800px) {
-        margin-top: $height;
-    }
-
-    @media screen and (min-width:800px) and (max-width:1000px) {
-        margin-top: $height*20;
-    }
-
-    @media screen and (min-width:1000px) and (max-width:1300px) {
-        margin-top: $height*18;
-    }
-
 }
 

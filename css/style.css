@@ -102,12 +102,12 @@
 .catalogo .card:hover {
   transform: translateY(50px);
 }
-@media screen and (min-width: 400px) and (max-width: 600px) {
+@media screen and (min-width: 300px) and (max-width: 769px) {
   .catalogo .card {
-    height: 80vh;
+    height: 115vh;
   }
 }
-@media screen and (min-width: 600px) and (max-width: 990px) {
+@media screen and (min-width: 770px) and (max-width: 990px) {
   .catalogo .card {
     height: 100vh;
   }
@@ -115,20 +115,6 @@
 @media screen and (min-width: 990px) and (max-width: 1100px) {
   .catalogo .card {
     height: 90vh;
-  }
-}
-.catalogo .card img {
-  width: 100.5%;
-  height: 33vh;
-}
-@media screen and (min-width: 400px) and (max-width: 600px) {
-  .catalogo .card img {
-    height: 50vh;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 800px) {
-  .catalogo .card img {
-    height: 60vh;
   }
 }
 .catalogo .card h2 {
@@ -191,24 +177,11 @@
 }
 
 .compra img {
-  width: 101%;
-  height: 41vh;
   border: 0.4rem solid #9A53E6;
   border-radius: 0.5rem;
 }
 .compra img:hover {
   transform: rotateY(180deg);
-}
-@media screen and (min-width: 450px) and (max-width: 768px) {
-  .compra img {
-    height: 60vh;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 994px) {
-  .compra img {
-    width: 110%;
-    height: 30vh;
-  }
 }
 .compra a {
   background-color: #4B244A;
@@ -720,9 +693,9 @@
     height: auto;
   }
 }
-@media screen and (min-width: 300px) and (max-width: 800px) {
+@media screen and (min-width: 300px) and (max-width: 700px) {
   .fondo {
-    background-image: none;
+    background-image: url(../imagenes/inicio/fondomobile.jpg);
     height: auto;
   }
 }
@@ -747,7 +720,7 @@
     font-size: 2.5rem;
     width: 50%;
     margin: 2rem;
-    color: black;
+    color: #9A53E6;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 800px) {
@@ -755,7 +728,7 @@
     font-size: 2.5rem;
     width: 50%;
     margin: 2rem;
-    color: black;
+    color: #9A53E6;
     text-align: center;
   }
 }
@@ -860,7 +833,7 @@
   font-weight: bolder;
   line-height: 2rem;
   text-align: center;
-  margin-top: 17rem;
+  margin-top: 8rem;
   padding: 2rem;
   background-color: white;
   border: 0.1rem solid black;
@@ -878,7 +851,7 @@
 }
 
 .card-group {
-  margin-top: 8rem;
+  margin: 8rem 2rem 4rem 2rem;
   border-radius: 0.5rem;
   border: 0.4rem solid #9A53E6;
 }
@@ -902,25 +875,6 @@
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-style: italic;
-}
-
-.footer-index {
-  margin-top: 150vh;
-}
-@media screen and (min-width: 300px) and (max-width: 800px) {
-  .footer-index {
-    margin-top: 10vh;
-  }
-}
-@media screen and (min-width: 800px) and (max-width: 1000px) {
-  .footer-index {
-    margin-top: 200vh;
-  }
-}
-@media screen and (min-width: 1000px) and (max-width: 1300px) {
-  .footer-index {
-    margin-top: 180vh;
-  }
 }
 
 /*Libros*/
@@ -1716,6 +1670,7 @@
 body {
   background: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
   min-height: 100%;
+  overflow-x: hidden;
 }
 
 .navbar {

@@ -46,28 +46,16 @@
             transform: translateY(50px);
         }
 
-        @media screen and (min-width:400px) and (max-width:600px) {
-            height: $height*8;
+        @media screen and (min-width:300px) and (max-width:769px) {
+            height: $height*11.5;
         }
 
-        @media screen and (min-width:600px) and (max-width:990px) {
+        @media screen and (min-width:770px) and (max-width:990px) {
             height: $height*10;
         }
 
         @media screen and (min-width:990px) and (max-width:1100px) {
             height: $height*9;
-        }
-
-        img{
-            @include imagenes ($width+0.5, $height*3+3);
-
-            @media screen and (min-width:400px) and (max-width:600px) {
-                height: $height*5;
-            }
-
-            @media screen and (min-width:600px) and (max-width:800px) {
-                height: $height*6;
-            }
         }
 
         h2 {

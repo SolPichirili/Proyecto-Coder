@@ -7,21 +7,11 @@
   .compra {
 
     img {
-        @include imagenes ($width+1, $height*4+1);
         border: 0.4rem solid $lila;
         border-radius: $radius;
 
         &:hover {
             transform: rotateY(180deg);
-        }
-
-        @media screen and (min-width:450px) and (max-width:768px) {
-          height: $height*6;
-        }
-
-        @media screen and (min-width:769px) and (max-width:994px) {
-          width: $width+10;
-          height: $height*3;
         }
     }
 
