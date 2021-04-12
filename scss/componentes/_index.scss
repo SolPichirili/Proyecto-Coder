@@ -181,34 +181,6 @@
 
 
 
-    img {
-        @include imagenes ($width, $height*4.5);
-
-        @media screen and (max-width:350px) {
-            @include imagenes ($width, $height*3);
-        }
-
-        @media screen and (min-width:350px) and (max-width:500px) {
-            @include imagenes ($width, $height*4);
-        }
-
-        @media screen and (min-width:500px) and (max-width:575px) {
-            @include imagenes ($width, $height*5);
-        }
-
-        @media screen and (min-width:575px) and (max-width:800px) {
-            @include imagenes ($width, $height*2);
-        }
-
-        @media screen and (min-width:800px) and (max-width:1000px) {
-            @include imagenes ($width, $height*3);
-        }
-
-        @media screen and (min-width:1000px) and (max-width:1300px) {
-            @include imagenes ($width, $height*3.5);
-        }
-    }
-
 
     h4 {
         color: $black;

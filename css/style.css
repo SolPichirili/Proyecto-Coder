@@ -884,46 +884,6 @@
     margin-top: 12rem;
   }
 }
-.card-group img {
-  width: 100%;
-  height: 45vh;
-}
-@media screen and (max-width: 350px) {
-  .card-group img {
-    width: 100%;
-    height: 30vh;
-  }
-}
-@media screen and (min-width: 350px) and (max-width: 500px) {
-  .card-group img {
-    width: 100%;
-    height: 40vh;
-  }
-}
-@media screen and (min-width: 500px) and (max-width: 575px) {
-  .card-group img {
-    width: 100%;
-    height: 50vh;
-  }
-}
-@media screen and (min-width: 575px) and (max-width: 800px) {
-  .card-group img {
-    width: 100%;
-    height: 20vh;
-  }
-}
-@media screen and (min-width: 800px) and (max-width: 1000px) {
-  .card-group img {
-    width: 100%;
-    height: 30vh;
-  }
-}
-@media screen and (min-width: 1000px) and (max-width: 1300px) {
-  .card-group img {
-    width: 100%;
-    height: 35vh;
-  }
-}
 .card-group h4 {
   color: black;
   font-family: "Josefin Sans", sans-serif;
@@ -1806,11 +1766,19 @@ footer ul {
   font-size: medium;
   font-weight: bolder;
   letter-spacing: 0.1rem;
-  line-height: 1rem;
+  line-height: 2rem;
   text-align: center;
   text-decoration: none;
   word-spacing: 0.2rem;
   list-style: none;
+}
+footer ul a {
+  color: #9A53E6;
+  text-decoration: none;
+}
+footer i {
+  font-size: 3rem;
+  color: #9A53E6;
 }
 
 .datosDeLaEmpresa {
@@ -1820,12 +1788,15 @@ footer ul {
   font-weight: bold;
   font-style: italic;
   line-height: 2rem;
-  text-align: left;
   word-spacing: 0.1rem;
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+
+.link-logo {
+  text-decoration: none;
 }
 
 .nosotros h1, .nosotros h2, .catalogo h1, .gratis,

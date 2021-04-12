@@ -74,11 +74,21 @@ footer {
         font-size: medium;
         font-weight: bolder;
         letter-spacing: map-get($formato-tipografia, letter-spacing);
-        line-height: $altura;
+        line-height: $altura*2;
         text-align: map-get($formato-tipografia, text-align);
         text-decoration: none;
         word-spacing: map-get($formato-tipografia, word-spacing);
         list-style: none;
+
+        a {
+            color: $lila;
+            text-decoration: none;
+        }
+    }
+
+    i {
+        font-size: 3rem;
+        color: $lila;
     }
 }
 
@@ -89,12 +99,15 @@ footer {
     font-weight: $bold;
     font-style: italic;
     line-height: map-get($formato-tipografia, line-height);
-    text-align: left;
     word-spacing: $space;
     padding: $padding - 1.5;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+.link-logo {
+    text-decoration: none;
 }
 
 .nosotros h1, .nosotros h2, .catalogo h1, .gratis,
