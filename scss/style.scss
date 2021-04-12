@@ -110,7 +110,7 @@ footer {
     text-decoration: none;
 }
 
-.nosotros h1, .nosotros h2, .catalogo h1, .gratis,
+.nosotros h1, .nosotros h2, .catalogo h1,
 .servicios h1, .compra h1, .contacto h1 {
     @extend %titulos;
     color: map-get($formato-tipografia, color);

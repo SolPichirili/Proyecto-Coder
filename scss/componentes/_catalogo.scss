@@ -87,11 +87,29 @@
 
 
 .contenidoGratuito {
+
+    h2 {
+        @extend %titulos;
+        color: map-get($formato-tipografia, color);
+        font-size: map-get($formato-tipografia, font-size);
+        text-decoration: map-get($formato-tipografia, text-decoration);
+        background-color: map-get($formato-tipografia, background-color);
+        border: map-get($formato-tipografia, border);
+        border-radius: map-get($formato-tipografia, border-radius);
+        width: map-get($formato-tipografia, width);
+        height: map-get($formato-tipografia, height);
+        margin: map-get($formato-tipografia, margin);
+        line-height: map-get($formato-tipografia, line-height);
+        padding: map-get($formato-tipografia, padding);
+
+    @media screen and (min-width:300px) and (max-width:600px) {
+        padding: $padding;
+        width: 80%;
+    }
+}
     
     img {
         @include imagenes ($width - 40, $height*5.5);
-        margin-left: $margin*4 + 1;
-        margin-bottom: $margin*5;
         transition: all 2s;
 
         &:hover {
@@ -100,22 +118,15 @@
 
         @media screen and (min-width:300px) and (max-width:400px) {
             width: 100%;
-            margin: $margin - 1;
+            
         }
 
-        @media screen and (min-width:400px) and (max-width:500px) {
-            width: 80%;
-            margin: $margin + 1;
-        }
-
-        @media screen and (min-width:500px) and (max-width:700px) {
+        @media screen and (min-width:401px) and (max-width:500px) {
             width: 70%;
-            margin: $margin + 2;
         }
-    
-        @media screen and (min-width:701px) and (max-width:1000px) {
-            width: 60%;
-            margin: $margin + 5;
+
+        @media screen and (min-width:765px) and (max-width:1000px) {
+            width: 50%;
         }
     }
 }
