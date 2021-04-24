@@ -1,116 +1,84 @@
 @import "../base/funciones";
 
-.catalogo {
+.intro-catalogo {
+
     input[type=search] {
         @extend %formularios;
-        margin-left: $margin*30;
+        margin-top: 6rem;
+        width: 20%;
 
-        @media screen and (min-width:300px) and (max-width:400px) {
+        @media screen and (min-width: 300px) and (max-width:800px) {
             width: 40%;
-            margin-left: $margin*5;
         }
 
-        @media screen and (min-width:400px) and (max-width:1300px) {
-            width: 40%;
-            margin-left: $margin*7.5;
-        }
-    
-        @media screen and (min-width:600px) and (max-width:800px) {
-            width: 40%;
+        @media screen and (min-width: 300px) and (max-width:500px) {
+            margin: 6rem 1rem 0rem 0rem;
         }
     }
 
     select {
         @extend %formularios;
-        margin: 7rem 0.5rem 5rem 1rem;
+        margin: 7rem 0rem 5rem 0rem;
+        width: 20%;
         display: block;
 
-        @media screen and (min-width:300px) and (max-width:600px) {
+        @media screen and (min-width: 300px) and (max-width:800px) {
             width: 40%;
-        }
-    
-        @media screen and (min-width:600px) and (max-width:800px) {
-            width: 40%;
-        }
-    }
-
-    .card {
-        height: $height*7;
-        margin-top: $margin;
-        margin-bottom: $margin*3;
-        transition: all 2s ease-in-out;
-        border: 0.4rem solid $lila;
-        border-radius: $radius;
-    
-        &:hover {
-            transform: translateY(50px);
-        }
-
-        @media screen and (min-width:300px) and (max-width:769px) {
-            height: $height*11.5;
-        }
-
-        @media screen and (min-width:770px) and (max-width:990px) {
-            height: $height*10;
-        }
-
-        @media screen and (min-width:990px) and (max-width:1100px) {
-            height: $height*9;
-        }
-
-        h2 {
-            color: $black;
-            font-family: $font-josefin;
-            font-weight: bolder;
-        }
-    
-        p {
-            color: $black;
-            font-family: $font-montserrat;
-            font-weight: $bold;
         }
     }
 }
 
+.catalogo {
 
-
-.contenidoGratuito {
-
-    h2 {
+    h1 {
         @extend %titulos;
-        color: map-get($formato-tipografia, color);
-        font-size: map-get($formato-tipografia, font-size);
-        text-decoration: map-get($formato-tipografia, text-decoration);
-        background-color: map-get($formato-tipografia, background-color);
-        border: map-get($formato-tipografia, border);
-        border-radius: map-get($formato-tipografia, border-radius);
+        color: $lila;
+        font-size: $font-size+0.5;
         width: map-get($formato-tipografia, width);
         height: map-get($formato-tipografia, height);
         margin: map-get($formato-tipografia, margin);
         line-height: map-get($formato-tipografia, line-height);
         padding: map-get($formato-tipografia, padding);
+        animation-duration: 3s;
+        }
 
-    @media screen and (min-width:300px) and (max-width:600px) {
-        padding: $padding;
-        width: 80%;
-    }
-}
-    
     img {
-        @include imagenes ($width - 40, $height*5.5);
-        transition: all 2s;
+        margin-bottom: 2rem;
+        border-radius: 0.5rem;
+        transition: all 3s ease-in-out;
 
         &:hover {
-            transform: rotateZ(360deg);
+            transform: scale(0.8);
+            filter: drop-shadow(0 0 10px rgba(255, 165, 0, 0.7));
         }
+    }
+}
 
-        @media screen and (min-width:300px) and (max-width:500px) {
-            width: 100%;
-            
-        }
+.contenidoGratuito {
 
-        @media screen and (min-width:765px) and (max-width:1000px) {
-            width: 60%;
+    h2 {
+        @extend %titulos;
+        color: $lila;
+        font-size: $font-size - 1;
+        text-decoration: map-get($formato-tipografia, text-decoration);
+        width: map-get($formato-tipografia, width);
+        height: map-get($formato-tipografia, height);
+        margin: $margin*2 auto;
+        line-height: map-get($formato-tipografia, line-height);
+        padding: map-get($formato-tipografia, padding);
+
+        @media screen and (min-width:300px) and (max-width:600px) {
+            padding: $padding;
+            width: 80%;
         }
+    }
+}
+
+.img-gratis {
+    transition: all 2s;
+    margin: 2rem 0rem 4rem 1rem;
+
+    &:hover {
+        transform: rotateZ(360deg);
     }
 }

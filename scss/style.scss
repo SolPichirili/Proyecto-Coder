@@ -24,53 +24,49 @@ body {
     overflow-x: hidden;
 }
 
-.navbar {
-    background-color: $violeta;
+.menuPrincipal {
+    background-color: $black;
     font-family: $font-josefin;
     font-size: $font-size - 0.8;
-}
 
-.navbar-brand {
-    margin-left: $margin*5;
-
-    img {
-        @include imagenes ($width/2, $height*2+6);
-        margin: $margin;
-
-        @media screen and (max-width: 300px) {
-            display: none;
-        }
-
-        @media screen and (min-width:300px) and (max-width:990px) {
-            display: none;
-        }
-
-        @media screen and (min-width:990px) and (max-width:1300px) {
-            @include imagenes ($width, $height*3)
-        }
-
-        @media screen and (min-width:1051px) and (max-width:1300px) {
-            @include imagenes (70%, $height*3);
-        }        
+    ul {
+        background-color: $black;
     }
-}
-
-.breadcrumb-item {
-    font-family: $font-josefin;
-    font-size: 1.2rem;
-    margin: 1rem;
 
     a {
-        color: $black;
+        color: $lila!important;
+
+        &:hover {
+            color: $naranja!important;
+        }
     }
+}
+
+.breadcrumb-lista {
+    margin-left: 1rem;
+
+    li {
+        font-family: $font-josefin;
+        font-size: 1.2rem;
+
+        a {
+            color: $naranja;
+        }
+    }
+}
+
+.boton-contacto {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
 }
 
 footer {
-    background-color: $violeta;
+    background-color: $naranja;
     padding: $padding;
 
     ul {
-        color: map-get($formato-tipografia, color);
         font-family: map-get($formato-tipografia, font-family);
         font-size: medium;
         font-weight: bolder;
@@ -82,14 +78,22 @@ footer {
         list-style: none;
 
         a {
-            color: $lila;
+            color: $black;
             text-decoration: none;
+
+            &:hover {
+                color: $lila;
+            }
         }
     }
 
     i {
         font-size: 3rem;
         color: $lila;
+
+        &:hover {
+            color: $black;
+        }
     }
 }
 
@@ -109,30 +113,4 @@ footer {
 
 .link-logo {
     text-decoration: none;
-}
-
-.nosotros h1, .nosotros h2, .catalogo h1,
-.servicios h1, .compra h1, .contacto h1 {
-    @extend %titulos;
-    color: map-get($formato-tipografia, color);
-    font-size: map-get($formato-tipografia, font-size);
-    text-decoration: map-get($formato-tipografia, text-decoration);
-    background-color: map-get($formato-tipografia, background-color);
-    border: map-get($formato-tipografia, border);
-    border-radius: map-get($formato-tipografia, border-radius);
-    width: map-get($formato-tipografia, width);
-    height: map-get($formato-tipografia, height);
-    margin: map-get($formato-tipografia, margin);
-    line-height: map-get($formato-tipografia, line-height);
-    padding: map-get($formato-tipografia, padding);
-
-    @media screen and (min-width:300px) and (max-width:600px) {
-        padding: $padding*2;
-        width: $width;
-    }
-
-    @media screen and (min-width:600px) and (max-width:800px) {
-        padding: $padding*2;
-        width: 70%;
-    }
 }

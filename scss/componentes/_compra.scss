@@ -1,49 +1,50 @@
 
-.pasos {
-    width: $width;
-    margin: 10rem auto;
+.compra {
+
+  h1 {
+    @extend %titulos;
+    color: $lila;
+    font-size: map-get($formato-tipografia, font-size);
+    width: map-get($formato-tipografia, width);
+    height: map-get($formato-tipografia, height);
+    margin: map-get($formato-tipografia, margin);
+    line-height: map-get($formato-tipografia, line-height);
+    padding: map-get($formato-tipografia, padding);
+    animation-duration: 2s;
   }
 
-  .compra {
-
-    img {
-        border: 0.4rem solid $lila;
-        border-radius: $radius;
-
-        &:hover {
-            transform: rotateY(180deg);
-        }
-    }
-
-    a {
-      @include botones ($violeta, $border, $radius);
-      margin: $margin auto;
-      color: $black;
-      transition: all 2s ease;
-      width: $width/2;
-      font-family: map-get($formato-tipografia, font-family);
-      font-weight: map-get($formato-tipografia, font-weight);
-
-      &:hover {
-        transform: scale(1.5);
-      }
-    }
+  h2 {
+    @extend %servicios;
+    font-size: $font-size - 0.8;
   }
 
-  .parrafoPaso1 {
-      @extend %parrafos-compra;
-        color: $purpura;
-        padding: 1rem;
+  p {
+    @extend %servicios;
+    font-size: $font-size -1;
   }
-  
-  .parrafoPaso2 {
-      @extend %parrafos-compra;
-        color: $violeta;
-        padding: 1rem;
+
+}
+
+.tarjeta-compra {
+  @include botones ($naranja, 0.4rem solid $naranja ,$radius);
+  transition: all 2s ease;
+
+  &:hover {
+    transform: translateX(50px);
   }
-  
-  .parrafoPaso3 {
-      @extend %parrafos-compra;
-    color: $violeta-oscuro;
-    padding: 1rem;
+}
+
+.boton-compra {
+  @include botones ($lila, $border, $radius);
+  margin: $margin*3 auto;
+  color: $black;
+  transition: all 3s ease;
+  width: $width/2;
+  font-family: map-get($formato-tipografia, font-family);
+  font-weight: map-get($formato-tipografia, font-weight);
+
+  &:hover {
+    transform: scale(1.5);
   }
+}
+

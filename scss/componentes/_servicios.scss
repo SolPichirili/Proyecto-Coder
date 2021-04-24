@@ -1,93 +1,82 @@
+.servicios {
+
+    h1 {
+        @extend %titulos;
+        color: $naranja;
+        font-size: map-get($formato-tipografia, font-size);
+        width: map-get($formato-tipografia, width);
+        height: map-get($formato-tipografia, height);
+        margin: map-get($formato-tipografia, margin);
+        line-height: map-get($formato-tipografia, line-height);
+        padding: map-get($formato-tipografia, padding);
+        animation-duration: 2s;
+    }
+}
 
 .parrafoServicios {
     @extend %servicios;
     color: $white;
-    background-color: $violeta;
+    font-size: $font-size - 0.5;
+    background-color: $lila;
     width: $width - 40;
     text-align: center;
     padding: $padding;
     border-radius: $radius;
-    margin: 10rem auto;
+    margin: 9rem auto;
 
-    @media screen and (min-width:300px) and (max-width:800px) {
-        width: 90%;
+    @media screen and (min-width:300px) and (max-width:768px) {
+        font-size: $font-size - 0.7;
+        width: 80%;
     }
 }
 
-.enNegro {
-    @extend %servicios;
-    color: $black;
+.acordeon {
+    margin-bottom: 10rem;
 }
 
-.enBlanco {
-    @extend %servicios;
-    color: $white;
-}
+.fondo-acordeon {
+    background-color: $naranja;
+    @extend %parrafos;
+    font-weight: 800;
 
-.carousel {
-    margin: $margin + 3;
-    height: $height *9 + 5;
-    border: 0.5rem solid $lila;
-    border-radius: $radius;
-
-    @media screen and (min-width:300px) and (max-width:400px) {
-        height: $height*4;
-        border: none;
-        width: 90%;
-        margin: $margin - 1;
-    }
-
-    @media screen and (min-width:401px) and (max-width:500px) {
-        height: $height*3.5;
-        border: none;
-        width: 90%;
-        margin: $margin - 1;
-    }
-
-    @media screen and (min-width:501px) and (max-width:700px) {
-        height: $height*5;
-        border: none;
-        width: 90%;
-        margin: $margin - 1;
-    }
-
-    @media screen and (min-width:701px) and (max-width:1000px) {
-        height: $height*6;
-        border: none;
-        width: 90%;
-        margin: $margin - 1;
+    h2 {
+        @extend %titulos;
+        background-color: $naranja !important;
     }
 }
 
-
-.servicios {
+.testimonios {
     
-    img {
-        height: $height *9 +2.5;
-
-        @media screen and (min-width:300px) and (max-width:400px) {
-            height: $height*4;
-            border-radius: $radius;
-            width: $width;
-        }
-
-        @media screen and (min-width:401px) and (max-width:500px) {
-            height: $height*3.5;
-            border-radius: $radius;
-            width: $width;
-        }
-
-        @media screen and (min-width:501px) and (max-width:700px) {
-            height: $height*5;
-            border-radius: $radius;
-            width: $width;
-        }
-
-        @media screen and (min-width:701px) and (max-width:1000px) {
-            height: $height*6;
-            border-radius: $radius;
-            width: $width;
-        }
+    h3 {
+        @extend %titulos;
+        color: $naranja;
+        margin: 3rem auto;
     }
 }
 
+.tarjetas-testimonios {
+    margin-bottom: 8rem;
+    border-radius: $radius;
+    border: 0.4rem solid $naranja;
+
+    @media screen and (min-width:300px) and (max-width:767px) {
+        border: none;
+        margin: $margin auto;
+    }
+}
+
+.tarjeta {
+    background-color: $lila;
+
+    h4 {
+        @extend %titulos;
+    }
+
+    p {
+        @extend %servicios;
+    }
+
+    img {
+        margin-top: $margin;
+    }
+}

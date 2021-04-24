@@ -1,18 +1,63 @@
 /*Libros*/
 
+.parrafosLibros-naranja {
+    @extend %parrafos;
+    color: $naranja;
+    margin-top: $margin*4;
+}
+
+.parrafosLibros-lila {
+    @extend %parrafos;
+    color: $lila;
+    margin-top: $margin*4;
+}
+
+.boton-libros-lila {
+    @extend %botones;
+    @include botones ($lila, $border, $radius);
+    color: $black;
+    transition: all 2s ease;
+
+    &:hover {
+        transform: scale(0.8)
+    }
+
+    @media screen and (min-width:300px) and (max-width:400px) {
+        font-size: 0.7rem;
+    }
+}
+
+.boton-libros-naranja {
+    @extend %botones;
+    @include botones ($naranja, $border, $radius);
+    color: $black;
+    transition: all 2s ease;
+
+    &:hover {
+        transform: scale(0.8)
+    }
+
+    @media screen and (min-width:300px) and (max-width:400px) {
+        font-size: 0.7rem;
+    }
+}
+
+.img-borde-naranja {
+    margin: 5rem 0rem;
+    border: 0.5rem solid $naranja;
+    border-radius: $radius;
+}
+
+.img-borde-lila {
+    margin: 5rem 0rem;
+    border: 0.5rem solid $lila;
+    border-radius: $radius;
+}
+
+
 /*Cocina*/
 
 .cocina-libros {
-
-    iframe {
-        @include imagenes ($width, $height*5);
-        margin-bottom: $margin*2;
-        
-
-        @media screen and (min-width:300px) and (max-width:800px) {
-            margin: 0 0 4rem 0;
-        }
-    }
 
     h1 {
         font-family: map-get($cocina, font-family);
@@ -22,8 +67,9 @@
         line-height: map-get($formato-tipografia, line-height);
         text-align: map-get($formato-tipografia, text-align);
         word-spacing: map-get($formato-tipografia, word-spacing);
-        margin: $margin;
-        text-decoration: map-get($formato-tipografia, text-decoration);
+        margin: $margin*2;
+        text-decoration: underline;
+        color: $lila;
 
         @media screen and (min-width:300px) and (max-width:900px) {
             line-height: $altura*3;
@@ -39,8 +85,8 @@
         line-height: map-get($formato-tipografia, line-height);
         text-align: map-get($formato-tipografia, text-align);
         word-spacing: map-get($formato-tipografia, word-spacing);
-        text-decoration: map-get($formato-tipografia, text-decoration);
         margin: $margin;
+        color: $lila;
 
         @media screen and (min-width:300px) and (max-width:800px) {
             margin: 0 0 2rem 0;
@@ -48,78 +94,10 @@
     }
 }
 
-.cocina-libros {
-
-    img { 
-        @include imagenes ($width/2, $height*10);
-        @include borde-imagenes ($amarillo, $padding, 0.4rem solid $amarillo);
-        margin: $margin*3 $margin*2 $margin $margin;
-        border-radius: $radius;
-
-        
-        @media screen and (min-width:300px) and (max-width:450px) {
-            width: $width;
-            height: $height*7;
-            margin: 0 0 2rem 0.7rem;
-        }
-
-        @media screen and (min-width:450px) and (max-width:600px) {
-            width: 80%;
-            height: $height*8;
-            margin: $margin auto;
-        }
-    
-        @media screen and (min-width:601px) and (max-width:700px) {
-            width: $width;
-            height: $height*10;
-            margin: 0 0 2rem 0;
-        }
-
-        @media screen and (min-width:701px) and (max-width:900px) {
-            width: 80%;
-            height: $height*10;
-            margin: $margin*2 auto;
-        }
-
-        @media screen and (min-width:901px) and (max-width:1000px) {
-            height: $height*7;
-            margin-top: $margin*4;
-        }
-    }
-
-    a {
-        @extend %botones;
-        @include botones ($amarillo, $border, $radius);
-
-        @media screen and (min-width:300px) and (max-width:400px) {
-            font-size: 0.7rem;
-        }
-    }
-}
-
-.parrafosLibros {
-    @extend %parrafos;
-    margin-top: $margin*4;
-
-    @media screen and (min-width:300px) and (max-width:900px) {
-        width: $width;
-        height: $height*6;
-        margin: 0 0 2rem 0;
-    }
-}
 
 /*Ciencia Ficción*/
 
 .ficcion-libros {
-
-    iframe {
-        @include imagenes ($width, $height*5);
-        margin-bottom: $margin*2;
-
-        @media screen and (min-width:300px) and (max-width:800px) {
-            margin: 0 0 2rem 0;
-        }
-    }
 
     h1 {
         font-family: map-get($ficcion, font-family);
@@ -130,7 +108,8 @@
         text-align: map-get($formato-tipografia, text-align);
         word-spacing: map-get($formato-tipografia, word-spacing);
         margin: $margin;
-        text-decoration: map-get($formato-tipografia, text-decoration);
+        text-decoration: underline;
+        color: $naranja;
 
         @media screen and (min-width:300px) and (max-width:900px) {
             line-height: $altura*3;
@@ -146,8 +125,8 @@
         line-height: map-get($formato-tipografia, line-height);
         text-align: map-get($formato-tipografia, text-align);
         word-spacing: map-get($formato-tipografia, word-spacing);
-        text-decoration: map-get($formato-tipografia, text-decoration);
         margin: $margin - 1;
+        color: $naranja;
 
         @media screen and (min-width:300px) and (max-width:900px) {
             line-height: $altura*3;
@@ -156,67 +135,9 @@
     }
 }
 
-.ficcion-libros {
-
-    img { 
-        @include imagenes (40%, $height*9);
-        @include borde-imagenes ($azul-claro, $padding, 0.4rem solid $azul-claro);
-        margin: $margin*3 $margin*2 $margin $margin*3;
-        border-radius: $radius;
-
-        
-        @media screen and (min-width:300px) and (max-width:450px) {
-            width: $width;
-            height: $height*7;
-            margin: 0 0 2rem 0;
-        }
-
-        @media screen and (min-width:450px) and (max-width:600px) {
-            width: 80%;
-            height: $height*8;
-            margin: $margin auto;
-        }
-    
-        @media screen and (min-width:601px) and (max-width:700px) {
-            width: $width;
-            height: $height*10;
-            margin: 0 0 2rem 0;
-        }
-
-        @media screen and (min-width:701px) and (max-width:900px) {
-            width: 80%;
-            height: $height*10;
-            margin: $margin*2 auto;
-        }
-
-        @media screen and (min-width:901px) and (max-width:1000px) {
-            height: $height*7;
-            margin-top: $margin*4;
-        }
-    }
-
-    a {
-        @extend %botones;
-        @include botones ($azul-claro, $border, $radius);
-
-        @media screen and (min-width:300px) and (max-width:400px) {
-            font-size: 0.7rem;
-        }
-    }
-}
-
 /*Novelas*/
 
 .novelas-libros {
-
-    iframe {
-        @include imagenes ($width, $height*5);
-        margin-bottom: $margin*2;
-
-        @media screen and (min-width:300px) and (max-width:800px) {
-            margin: 0 0 2rem 0;
-        }
-    }
 
     h1 {
         font-family: map-get($novelas, font-family);
@@ -227,7 +148,8 @@
         text-align: map-get($formato-tipografia, text-align);
         word-spacing: map-get($formato-tipografia, word-spacing);
         margin: $margin;
-        text-decoration: map-get($formato-tipografia, text-decoration);
+        text-decoration: underline;
+        color: $lila;
 
         @media screen and (min-width:300px) and (max-width:900px) {
             line-height: $altura*4;
@@ -243,8 +165,8 @@
         line-height: map-get($formato-tipografia, line-height);
         text-align: map-get($formato-tipografia, text-align);
         word-spacing: map-get($formato-tipografia, word-spacing);
-        text-decoration: map-get($formato-tipografia, text-decoration);
         margin: $margin;
+        color: $lila;
 
         @media screen and (min-width:300px) and (max-width:800px) {
             line-height: $altura*3;
@@ -253,77 +175,9 @@
     }
 }
 
-.novelas-libros {
-
-    a {
-        @extend %botones;
-        @include botones ($rosa-oscuro, $border, $radius);
-
-        @media screen and (min-width:300px) and (max-width:400px) {
-            font-size: 0.7rem;
-        }
-    }
-}
-
-.gif {
-    @include imagenes ($width, $height*6);
-    margin-bottom: $margin*2;
-
-    @media screen and (min-width:300px) and (max-width:800px) {
-        height: $height*3;
-        margin: 0 0 2rem 0;
-    }
-}
-
-.imgNovelas { 
-    @include imagenes (40%, $height*10);
-    @include borde-imagenes ($rosa-oscuro, $padding, 0.4rem solid $rosa-oscuro);
-    margin: $margin*3 $margin*2 $margin $margin*3;
-    border-radius: $radius;
-
-    
-    @media screen and (min-width:300px) and (max-width:450px) {
-        width: $width;
-        height: $height*7;
-        margin: 0 0 2rem 0;
-    }
-
-    @media screen and (min-width:450px) and (max-width:600px) {
-        width: 80%;
-        height: $height*8;
-        margin: $margin auto;
-    }
-
-    @media screen and (min-width:601px) and (max-width:700px) {
-        width: $width;
-        height: $height*10;
-        margin: 0 0 2rem 0;
-    }
-
-    @media screen and (min-width:701px) and (max-width:900px) {
-        width: 80%;
-        height: $height*10;
-        margin: $margin*2 auto;
-    }
-
-    @media screen and (min-width:901px) and (max-width:1000px) {
-        height: $height*7;
-        margin-top: $margin*4;
-    }
-}
-
 /*Terror*/
 
 .terror-libros {
-
-    iframe {
-        @include imagenes ($width, $height*5);
-        margin-bottom: $margin*2;
-
-        @media screen and (min-width:300px) and (max-width:800px) {
-            margin: 0 0 2rem 0;
-        }
-    }
 
     h1 {
         font-family: map-get($terror, font-family);
@@ -334,7 +188,8 @@
         text-align: map-get($formato-tipografia, text-align);
         word-spacing: map-get($formato-tipografia, word-spacing);
         margin: $margin;
-        text-decoration: map-get($formato-tipografia, text-decoration);
+        text-decoration: underline;
+        color: $naranja;
 
         @media screen and (min-width:300px) and (max-width:400px) {
             font-size: $font-size;
@@ -354,8 +209,8 @@
         line-height: map-get($formato-tipografia, line-height);
         text-align: map-get($formato-tipografia, text-align);
         word-spacing: map-get($formato-tipografia, word-spacing);
-        text-decoration: map-get($formato-tipografia, text-decoration);
         margin: $margin;
+        color: $naranja;
 
         @media screen and (min-width:300px) and (max-width:800px) {
             line-height: $altura*3;
@@ -364,71 +219,9 @@
     }
 }
 
-.terror-libros {
-
-    img { 
-        @include imagenes (40%, $height*10);
-        @include borde-imagenes ($rojo-claro, $padding, 0.4rem solid $rojo-claro);
-        margin: $margin*3 $margin*2 $margin $margin*3;
-        border-radius: $radius;
-
-        @media screen and (min-width:300px) and (max-width:450px) {
-            width: $width;
-            height: $height*7;
-            margin: 0 0 2rem 0;
-        }
-
-        @media screen and (min-width:450px) and (max-width:600px) {
-            width: 80%;
-            height: $height*8;
-            margin: $margin auto;
-        }
-    
-        @media screen and (min-width:601px) and (max-width:700px) {
-            width: $width;
-            height: $height*10;
-            margin: 0 0 2rem 0;
-        }
-
-        @media screen and (min-width:701px) and (max-width:900px) {
-            width: 80%;
-            height: $height*10;
-            margin: $margin*2 auto;
-        }
-
-        @media screen and (min-width:901px) and (max-width:1000px) {
-            height: $height*7;
-            margin-top: $margin*4;
-        }
-    }
-
-    a {
-        @extend %botones;
-        @include botones ($rojo-claro, $border, $radius);
-
-        @media screen and (min-width:300px) and (max-width:400px) {
-            font-size: 0.7rem;
-        }
-    }
-}
-
 /*Gratis*/
 
-.gratis-body {
-    background: map-get($gratis, background-color);
-    min-height: 100%;
-}
-
 .gratis-libros {
-
-    iframe {
-        @include imagenes ($width, $height*5);
-        margin: $margin*2;
-
-        @media screen and (min-width:300px) and (max-width:800px) {
-            margin: 0 0 2rem 0;
-        }
-    }
 
     h1 {
         font-family: map-get($gratis, font-family);
@@ -439,7 +232,8 @@
         text-align: map-get($formato-tipografia, text-align);
         word-spacing: map-get($formato-tipografia, word-spacing);
         margin: $margin;
-        text-decoration: map-get($formato-tipografia, text-decoration);
+        text-decoration: underline;
+        color: $lila;
 
         @media screen and (min-width:300px) and (max-width:900px) {
             line-height: $altura*3;
@@ -455,8 +249,8 @@
         line-height: map-get($formato-tipografia, line-height);
         text-align: map-get($formato-tipografia, text-align);
         word-spacing: map-get($formato-tipografia, word-spacing);
-        text-decoration: map-get($formato-tipografia, text-decoration);
         margin: $margin;
+        color: $lila;
 
         @media screen and (min-width:300px) and (max-width:800px) {
             line-height: $altura*3;
@@ -464,55 +258,3 @@
         }
     }
 }
-
-.gratis-libros {
-
-    img { 
-        @include imagenes (40%, $height*9);
-        @include borde-imagenes ($gris, $padding, 0.4rem solid $gris);
-        margin: $margin*3 $margin*2 $margin $margin*3;
-        border-radius: $radius;
-
-        
-        @media screen and (min-width:300px) and (max-width:450px) {
-            width: $width;
-            height: $height*7;
-            margin: 0 0 2rem 0;
-        }
-
-        @media screen and (min-width:450px) and (max-width:600px) {
-            width: 80%;
-            height: $height*8;
-            margin: $margin auto;
-        }
-    
-        @media screen and (min-width:601px) and (max-width:700px) {
-            width: $width;
-            height: $height*10;
-            margin: 0 0 2rem 0;
-        }
-
-        @media screen and (min-width:701px) and (max-width:900px) {
-            width: 80%;
-            height: $height*10;
-            margin: $margin*2 auto;
-        }
-
-        @media screen and (min-width:901px) and (max-width:1000px) {
-            height: $height*7;
-            margin-top: $margin*4;
-        }
-    }
-
-    a {
-        @extend %botones;
-        @include botones ($gris, $border, $radius);
-
-        @media screen and (min-width:300px) and (max-width:400px) {
-            font-size: 0.7rem;
-        }
-    }
-}
-
-
-

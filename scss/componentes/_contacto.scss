@@ -1,160 +1,87 @@
 
 .contacto {
+
+    h1 {
+        @extend %titulos;
+        color: $naranja;
+        font-size: map-get($formato-tipografia, font-size);
+        width: map-get($formato-tipografia, width);
+        height: map-get($formato-tipografia, height);
+        margin: map-get($formato-tipografia, margin);
+        line-height: map-get($formato-tipografia, line-height);
+        padding: map-get($formato-tipografia, padding);
+        animation-duration: 2s;
+    }
     
     p {
-        @extend %parrafos;
+        @extend %servicios;
+        color: $lila;
+        font-weight: $bold;
+        font-size: $font-size - 0.7;
 
         @media screen and (min-width:300px) and (max-width:700px) {
             margin: 2rem auto;
         }
     }
+}
 
-    form {
-        background-color: $lila;
-        border: 0.1rem solid $violeta-oscuro;
-        border-radius: $radius;
-        padding: $padding*4;
-        margin: $margin*3 auto;
-        width: $width;
-        height: $height*20;
-
-        @media screen and (min-width:300px) and (max-width:400px) {
-            padding: $padding;
-            height: $height*17;
-        }
-
-        @media screen and (min-width:401px) and (max-width:600px) {
-            padding: $padding;
-            height: $height*15;
-        }
-
-        @media screen and (min-width:601px) and (max-width:800px) {
-            padding: $padding;
-            height: $height*17;
-        }
-
-        @media screen and (min-width:990px) and (max-width:1100px) {
-            padding: $padding*2;
-        }
-    }
+.formulario {
+    
+    @include botones ($naranja, 0.3rem solid $lila, $radius);
+    margin: 13rem 0rem;
+    padding: $padding;
 
     label {
         @extend %parrafos;
-
-        @media screen and (min-width:300px) and (max-width:600px) {
-            width: 80%;
-        }
-    
-        @media screen and (min-width:600px) and (max-width:800px) {
-            width: 80%;
-        }
+        font-weight: $bold;
     }
-}
 
-.contacto {
-    input[text], input[email], input[radio], input[checkbox] {
+    input[text], input[email], input[radio] {
         @extend %parrafos;
-
-        @media screen and (min-width:300px) and (max-width:600px) {
-            width: 100%;
-        }
     
-        @media screen and (min-width:600px) and (max-width:800px) {
+        @media screen and (min-width:300px) and (max-width:800px) {
             width: 100%;
         }
     }
-
+    
     legend {
         @extend %parrafos;
+        font-weight: $bold;
     }
-
+    
     button {
         @extend %parrafos;
-        background-color: $violeta;
-        border: 0.2rem solid $black;
+        font-weight: $bold;
+        background-color: $lila;
         border-radius: 0.4rem;
-        transition: all 1s;
-        margin: $margin*3;
+        transition: all 3s;
         text-align: center;
-
+        margin-right: 1rem;
+    
         &:hover {
             transform: scale(2);
         }
-
-        @media screen and (min-width:300px) and (max-width:600px) {
-            width: 40%;
-            margin: $margin;
-        }
     
-        @media screen and (min-width:600px) and (max-width:1000px) {
+        @media screen and (min-width:300px) and (max-width:1000px) {
             width: 40%;
-            margin: $margin;
         }
     }
 }
 
-.contacto {
-
-    img {
-        border-radius: $radius;
-        width: $width - 30;
-        height: $height*6;
-        margin: $margin*3 auto;
-        border: 0.4rem solid $violeta;
-
-        @media screen and (min-width:300px) and (max-width:500px) {
-            width: $width;
-            margin: $margin auto;
-            height: $height*3;
-        }
-
-        @media screen and (min-width:501px) and (max-width:600px) {
-            width: $width;
-            margin: $margin auto;
-            height: $height*3.7;
-        }
-
-        @media screen and (min-width:601px) and (max-width:765px) {
-            width: $width;
-            margin: $margin*2 auto;
-            height: $height*4;
-        }
-
-        @media screen and (min-width:766px) and (max-width:800px) {
-            width: $width;
-            margin: $margin*2 auto;
-            height: $height*6;
-        }
-
-        @media screen and (min-width:801px) and (max-width:990px) {
-            width: $width;
-            margin: $margin*2 auto;
-            height: $height*4;
-        }
-
-        @media screen and (min-width:991px) and (max-width:1000px) {
-            width: $width;
-            margin: $margin*2 auto;
-            height: $height*7;
-        }
-
-        @media screen and (min-width:991px) and (max-width:1100px) {
-            width: $width;
-            margin: $margin auto;
-            height: $height*7;
-        }
-
-        @media screen and (min-width:1101px) and (max-width:1300px) {
-            width: $width;
-            margin: $margin auto;
-            height: $height*6;
-        }
-    }
-}
 .mail {
     margin: $margin;
+
+    @media screen and (min-width:300px) and (max-width:424px) {
+        margin: 0;
+    }
 }
 
-.modal {
+.mensaje-novedades {
     @extend %parrafos;
+    font-weight: $bold;
+    margin-bottom: 2rem;
+}
+
+.mensaje-modal {
+    @extend %formularios;
 }

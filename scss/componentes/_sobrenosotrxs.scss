@@ -2,29 +2,58 @@
 .parrafoSobreHistoria {
     @extend %parrafos;
     margin: $margin;
+    color: $lila;
+    font-weight: 200;
+}
+
+.parrafoSobreHistoria-destacado {
+    @extend %parrafos;
+    margin: $margin;
+    color: $lila;
+    font-weight: $bold;
 }
 
 .parrafoSobreAudiolibros {
     @extend %parrafos;
     margin: 1rem 1rem 1rem 1rem;
+    color: $lila;
+    font-weight: 200;
 }
 
 .ultimoParrafo {
     margin: 0rem 1rem 6rem 1rem;
+    font-style: italic;
+    font-weight: 800;
 }
 
-.nosotros {
-    
-    img {
-        width: $width - 30;
-        height: $height*6;
-        margin: $margin*3 auto;
-        border-radius: $radius;
-        border: 0.4rem solid $lila;
+.nosotrxs {
 
-        @media screen and (min-width:300px) and (max-width:770px) {
-            @include imagenes ($width,$height*4);
+    h1, h2 {
+        @extend %titulos;
+        color: $naranja;
+        font-size: map-get($formato-tipografia, font-size);
+        width: map-get($formato-tipografia, width);
+        height: map-get($formato-tipografia, height);
+        margin: map-get($formato-tipografia, margin);
+        line-height: map-get($formato-tipografia, line-height);
+        padding: map-get($formato-tipografia, padding);
+        animation-duration: 3s;
+
+        @media screen and (min-width:300px) and (max-width:600px) {
+            padding: $padding*2;
+            width: $width;
+        }
+
+        @media screen and (min-width:600px) and (max-width:800px) {
+            padding: $padding*2;
+            width: 70%;
         }
     }
+}
+
+.img-nosotrxs {
+    margin: $margin*3 auto;
+    border-radius: $radius;
+    border: 0.4rem solid $lila;
 }
 
