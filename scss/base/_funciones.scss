@@ -40,19 +40,8 @@
 
 /*Mixin*/
 
-@mixin imagenes ($ancho, $alto) {
-    width: $ancho;
-    height: $alto;
-}
-
 @mixin botones ($color, $borde, $bordeado) {
     background-color: $color;
     border: $borde;
     border-radius: $bordeado;
-}
-
-@mixin borde-imagenes ($bg-color, $contorno, $borde) {
-    background-color: $bg-color;
-    padding: $contorno;
-    $borde: $border;
 }

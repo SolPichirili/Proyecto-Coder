@@ -46,6 +46,7 @@
         margin-bottom: 2rem;
         border-radius: 0.5rem;
         transition: all 3s ease-in-out;
+        column-gap: -webkit-column-gap(2rem);
 
         &:hover {
             transform: scale(0.8);

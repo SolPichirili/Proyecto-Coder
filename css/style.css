@@ -84,6 +84,7 @@
   margin-bottom: 2rem;
   border-radius: 0.5rem;
   transition: all 3s ease-in-out;
+  column-gap: -webkit-column-gap(2rem);
 }
 .catalogo img:hover {
   transform: scale(0.8);
@@ -224,6 +225,11 @@
 .mensaje-novedades {
   font-weight: bold;
   margin-bottom: 2rem;
+}
+
+.img-contacto {
+  height: -webkit-min-logical-height(auto);
+  width: -webkit-min-logical-width(auto);
 }
 
 /*Terror*/
