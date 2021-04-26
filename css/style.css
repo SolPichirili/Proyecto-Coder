@@ -227,11 +227,6 @@
   margin-bottom: 2rem;
 }
 
-.img-contacto {
-  height: -webkit-min-logical-height(auto);
-  width: -webkit-min-logical-width(auto);
-}
-
 /*Terror*/
 .terror h1 {
   font-family: "Special Elite", cursive;
